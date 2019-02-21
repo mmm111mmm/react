@@ -12,6 +12,9 @@
             font-size: 16px;
             font-family: 'Open Sans', sans-serif;
         }
+        ul > li {
+            padding-bottom: 20px;
+        }
     </style>
   </head>    
   <body>
@@ -24,20 +27,42 @@
     <br />
     <ul>
       <li>
-        <div>Dogapp v1 - props and state</div>
+        <div><b>Dogapp v1</b> - props, event and state</div>
         <div>
             <a target="_blank" href="https://dogapp-1-state-props--newfivefour.repl.co/">live site</a>
         </div>
         <div>
             <a target="_blank"  href="https://repl.it/@newfivefour/dogapp-1-state-props">source code on repl.it</a>
         </div>
+        <div>
+            <br />
+            <b>Explanation</b>: 
+            <ol>
+                <li>We create a Dog component. And use two of them.</li>
+                <li>We pass Kira and Tez's details as props</li>
+                <li>Press 'feed' on a dog, and the onClick event is called.</li>
+                <li>When we then update the 'hungry' state.</li>
+            </ol>
+        </div>
       </li>
       <li>
-        <div>Dogapp v2 - lists and conditional rendering</div>
+        <div><b>Dogapp v2</b> - lists and conditional rendering</div>
         <div>
             <a target="_blank"  href="https://dogapp-2-lists-keys-conditional-rendering--newfivefour.repl.co/">live site</a>
         </div>
-        <a target="_blank"  href="https://repl.it/@newfivefour/dogapp-2-lists-keys-conditional-rendering">source code on repl.it</a>
+        <div>
+                <a target="_blank"  href="https://repl.it/@newfivefour/dogapp-2-lists-keys-conditional-rendering">source code on repl.it</a>
+        </div>
+        <div>
+            <br />
+            <b>Explanation</b>: 
+            <ol>
+                <li>We create a new Playtime component.</li>
+                <li>This has three 'treat' buttons: stroke, play ball, give oranage.</li>
+                <li>When a button is pressed, the treat is added to a list.</li>
+                <li>If the last item of the list is 'give orange', we render "ORANGES!!!".</li>
+            </ol>
+        </div>
       </li>
       <li>
         <div>Dogapp v3 - forms</div>
