@@ -9,26 +9,16 @@
    </body>
    <script type="text/babel">
 
-    class Cat extends React.Component {
-        render() {
-            return (
-                <div>
-                    <div>Meaow</div>
-                    <hr />
-                </div>
-            );
-        }
-    }
-
     class Dog extends React.Component {
         constructor(props) {
             super(props)
             this.state = {
                 hungry: "yes",
             }
+            this.feed = this.feed.bind(this)
         }
 
-        feed = () => {
+        feed() {
             this.setState({
                 hungry: "no"
             })
@@ -52,8 +42,8 @@
 
     ReactDOM.render(
         <div>Here is my React app:
-            <Dog name="Kira" color="strange"/>
-            <Dog name="Tess" color="grey" />
+            <Dog name="Kira" color="brown and white"/>
+            <Dog name="Tez" color="grey" />
             <Cat />
         </div>,
         document.getElementById('root')
