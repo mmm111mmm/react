@@ -18,12 +18,11 @@
     </style>
   </head>    
   <body>
-    <h3>I have created a react app: dogapp</h3>
-    <h3>In this app you feed and play with Kira and Tez.</h3>
-    <h3>Below are versions of this app.</h3>
-    <h3>Each version of the app covers a new topic from this week.</h3>
-    <h3>Eventually I will cover all the topics.</h3>
-    <h3>I will explain these in the recaps.</h3>
+    <h1>All recap material for week 7</h1>
+    <h4>I have created a react app: dogapp. You feed and play with Kira and Tez.</h4>
+    <h4>Below are versions of this app. Each version of the app covers a new topic from this week.</h4>
+    <h4>Eventually I will cover all the topics.</h4>
+    <h4>I will explain these in the recaps.</h4>
     <br />
     <ul>
       <li>
@@ -44,6 +43,14 @@
                 <li>When we then update the 'hungry' state.</li>
             </ol>
         </div>
+        <div>
+            <br />
+            <b>Files changed/added</b>: 
+            <ol>
+                <li>src/App.js - added</li>
+                <li>src/index.js - added</li>
+            </ol>
+        </div>        
       </li>
       <li>
         <div><b>Dogapp v2</b> - lists and conditional rendering</div>
@@ -63,6 +70,13 @@
                 <li>If the last item of the list is 'give orange', we render "ORANGES!!!".</li>
             </ol>
         </div>
+        <div>
+            <br />
+            <b>Files changed/added</b>: 
+            <ol>
+                <li>src/App.js - added Playtime component</li>
+            </ol>
+        </div>         
       </li>
       <li>
         <div><b>Dogapp v3</b> - forms</div>
@@ -83,6 +97,14 @@
                 <li>And we update our list with these instead.</li>
             </ol>
         </div>
+        <div>
+            <br />
+            <b>Files changed/added</b>: 
+            <ol>
+                <li>src/Playtime.js - moved Playtime component to its own file</li>
+                <li>src/Playtime.js - changed Playtime to use HTML select and input tags</li>
+            </ol>
+        </div>         
       </li>
       <li>
         <div><b>Dogapp v4</b> - simple routing</div>
@@ -102,6 +124,17 @@
                 <li>Once we click on the 'dogs' link, we go to a new url (../dogs), and therefore the DogsScreen component</li>
             </ol>
         </div>
+        <div>
+            <br />
+            <b>Files changed/added</b>: 
+            <ol>
+                <li>src/Dog.js - moved the Dog component here to make App.js smaller</li>
+                <li>src/AboutScreen.js - a component that gives us an about screen</li>
+                <li>src/index.js - surrounded App in a BrowserRouter tag</li>
+                <li>src/App.js - added a DogsScreen component which show Kira and Tez</li>
+                <li>src/App.js - added NavLinks and Routes to the App component</li>
+            </ol>
+        </div>              
       </li>
       <li>
         <div><b>Dogapp v5</b> - routing with url parameters</div>
@@ -118,6 +151,13 @@
                 <li>Once we click on the 'dogs' link, we go to a new url (../dogs/pink), and therefore the DogsScreen component will have a pink background</li>
             </ol>
         </div>
+        <div>
+            <br />
+            <b>Files changed/added</b>: 
+            <ol>
+                <li>src/App.js - we pass a url parameter for colour and use it in DogsScreen</li>
+            </ol>
+        </div>            
       </li>
       <li>
         <div><b>Dogapp v6</b> - lifting up state</div>
@@ -137,6 +177,14 @@
                 <li>When the Dog component wants to update the state, it calls a method on DogsScreen.</li>
             </ol>
         </div>
+        <div>
+            <br />
+            <b>Files changed/added</b>: 
+            <ol>
+                <li>src/App.js - DogsScreen has some new state (the dogs hungry status) and pass it to the Dog components</li>
+                <li>src/Dog.js - It gets its hungry status from the props and call a method passed down from DogsScreen</li>
+            </ol>
+        </div>             
       </li>
       <li>
         Dogapp v7 - lifecycle events (Will do soon)
