@@ -64,7 +64,6 @@
       <div class="dogapp">
         <div>
             <b>Dogapp v1</b> - props, events and state
-            <a class="livesitelink" target="_blank" href="https://dogapp-1-state-props--newfivefour.repl.co/">live site</a>
             <a class="sourcecodelink" target="_blank"  href="https://repl.it/@newfivefour/dogapp-1-state-props">source code</a>
         </div>
         <div>
@@ -85,11 +84,10 @@
                 <li>src/index.js - added</li>
             </ol>
         </div>        
-    </div>
+      </div>
       <div class="dogapp">
         <div>
             <b>Dogapp v2</b> - lists and conditional rendering
-            <a class="livesitelink" target="_blank"  href="https://dogapp-2-lists-keys-conditional-rendering--newfivefour.repl.co/">live site</a>
             <a class="sourcecodelink" target="_blank"  href="https://repl.it/@newfivefour/dogapp-2-lists-keys-conditional-rendering">source code</a>
         </div>
         <div>
@@ -109,11 +107,10 @@
                 <li>src/App.js - added Playtime component</li>
             </ol>
         </div>         
-    </div>
+      </div>
       <div class="dogapp">
         <div>
             <b>Dogapp v3</b> - forms
-            <a class="livesitelink" target="_blank"  href="https://dogapp-3-forms--newfivefour.repl.co">live site</a>
             <a class="sourcecodelink" target="_blank"  href="https://repl.it/@newfivefour/dogapp-3-forms">source code</a>
         </div>
         <div>
@@ -135,11 +132,10 @@
                 <li>src/Playtime.js - changed Playtime to use HTML select and input tags</li>
             </ol>
         </div>         
-    </div>
+      </div>
       <div class="dogapp">
         <div>
             <b>Dogapp v4</b> - simple routing
-            <a class="livesitelink" target="_blank"  href="https://dogapp-4-simple-routing--newfivefour.repl.co">live site</a>
             <a class="sourcecodelink" target="_blank"  href="https://repl.it/@newfivefour/dogapp-4-simple-routing">source code</a>
         </div>
         <div>
@@ -163,11 +159,10 @@
                 <li>src/App.js - added NavLinks and Routes to the App component</li>
             </ol>
         </div>              
-    </div>
+      </div>
       <div class="dogapp">
         <div>
             <b>Dogapp v5</b> - routing with url parameters
-            <a class="livesitelink" target="_blank"  href="https://dogapp-5-routing-with-url-params--newfivefour.repl.co/dogs/pink">live site</a>
             <a class="sourcecodelink" target="_blank"  href="https://repl.it/@newfivefour/dogapp-5-routing-with-url-params">source code</a>
         </div>
         <div>
@@ -184,11 +179,10 @@
                 <li>src/App.js - we pass a url parameter for colour and use it in DogsScreen</li>
             </ol>
         </div>            
-    </div>
+      </div>
       <div class="dogapp">
         <div>
             <b>Dogapp v6</b> - lifting up state
-            <a class="livesitelink" target="_blank"  href="https://dogapp-6-lifting-up-state--newfivefour.repl.co/dogs/pink">live site</a>
             <a class="sourcecodelink" target="_blank"  href="https://repl.it/@newfivefour/dogapp-6-lifting-up-state">source code</a>
         </div>
         <div>
@@ -209,37 +203,51 @@
                 <li>src/Dog.js - It gets its hungry status from the props and call a method passed down from DogsScreen</li>
             </ol>
         </div>             
-    </div>
+      </div>
       <div class="dogapp">
         <div>
-            <b>Dogapp v7</b> - componentDidMount lifecycle event
-            <a class="livesitelink" target="_blank"  href="https://dogapp-7-componentDidMount-lifecycle-method--newfivefour.repl.co"">live site</a>
-            <a class="sourcecodelink" target="_blank"  href="https://repl.it/@newfivefour/dogapp-7-componentDidMount-lifecycle-method">source code</a>
+          <b>Dogapp v7</b> - componentDidMount lifecycle event
+          <a class="sourcecodelink" target="_blank"  href="https://repl.it/@newfivefour/dogapp-7-componentDidMount-lifecycle-method">source code</a>
+        </div>
+        <div>
+          <br />
+          <b>Explanation</b>: 
+          <ol>
+              <li>The DogsScreen component has a new lifecycle method - componentDidMount()</li>
+              <li>We console.log() to say this has been called</li>
+          </ol>
+        </div>
+        <div>
+          <br />
+          <b>Files changed/added</b>: 
+          <ol>
+              <li>src/DogsScreen.js - moved component into its own file to make App.js smaller </li>
+              <li>src/DogsScreen.js - added thecomponentDidMount() and console logging when it is called</li>
+          </ol>
+        </div>          
+      </div>
+      <div class="dogapp">
+        <div>
+          <b>Dogapp v8</b> - connecting to an API
+          <a class="sourcecodelink" target="_blank"  href="https://repl.it/@newfivefour/dogapp-8-api-call">source code</a>
         </div>
         <div>
             <br />
             <b>Explanation</b>: 
             <ol>
-                <li>The DogsScreen component has a new lifecycle method - componentDidMount()</li>
-                <li>We console.log() to say this has been called</li>
+                <li>The dogs are made by looping over an array of dogs in the component's state</li>
+                <li>This array is initiall empty</li>
+                <li>But we get the dogs via an axois API call in componentDidMount()</li>
             </ol>
         </div>
         <div>
-            <br />
-            <b>Files changed/added</b>: 
-            <ol>
-                <li>src/DogsScreen.js - moved component into its own file to make App.js smaller </li>
-                <li>src/DogsScreen.js - added thecomponentDidMount() and console logging when it is called</li>
-            </ol>
-        </div>          
-    </div>
-      <div class="dogapp">
-        Dogapp v8 - connecting to an API (Will do soon)
-        <div>
-            <div target="_blank"  href=">live site</div>
-        </div>
-        <div target="_blank"  href="">source code on repl.it</div>
-    </div>
+          <br />
+          <b>Files changed/added</b>: 
+          <ol>
+              <li>src/DogsScreen.js - added API call to componentDidMount()</li>
+          </ol>
+        </div>   
+      </div>
     </div>
     <br />
     <p>(I will add more comments and information to this page. And more comments to the code).</p>
